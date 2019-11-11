@@ -34,7 +34,6 @@ void str_print(char* array){
 struct word guess_update(struct word word){
     int i = 0;
     int x = 0;
-    int y = 0;
     while(i <= str_len(word.word)){
         if(word.word[i] == word.guess[0]){
             word.prediction[i] = word.guess[0];
@@ -46,7 +45,6 @@ struct word guess_update(struct word word){
     if(x == 1){
         printf("Your letter worked! Congrats! :)\n");
         printf("Prediction: %s\n", word.prediction);
-        printf("Actual: %s\n", word.word);
     }
     else{
         printf("Sorry! Your letter didn't work.\n");
