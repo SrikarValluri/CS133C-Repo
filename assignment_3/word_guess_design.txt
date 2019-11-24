@@ -1,0 +1,17 @@
+struct Word:
+ - Word (string input from Player 1(Player who decides the word for prediction.))
+ - Guess (string input from Player 2(Player who guesses), it's the actual guess of the letter.)
+ - Prediction (string input from Player 2, it's the actual string which is displayed to Player 2.)
+ - Done (boolean which decides whether the loop should end, or when the game's over.)
+
+int str_len(char* array):
+    function which determines the length of a string (not the length of the array), returns number
+
+void str_print(char* array):
+    function which prints a string
+
+struct word guess_update(struct word word):
+    function which takes struct word input and updates the parameters of struct word to determine whether the game has ended yet.
+
+int main():
+    function which has turn cycles, takes input from user, and uses other functions to create a terminal GUI of hangman.

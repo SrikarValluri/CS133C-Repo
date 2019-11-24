@@ -13,6 +13,7 @@ struct board{
     bool O;
     bool X;
     bool done;
+
 };
 
 struct board setupBoard(){
@@ -115,10 +116,10 @@ int main(){
         i++;
     }
     if(board.O == true){
-        printf("Player 1 Wins!");
+        printf("Player 1 Wins!\n");
     }
     else if(board.X == true){
-        printf("Player 2 Wins!");
+        printf("Player 2 Wins!\n");
     }
     else{
         printf("It's a TIE!");
